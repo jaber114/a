@@ -16,6 +16,7 @@ import wd from "./assets/wd.jpg";
 import wd2 from "./assets/wd2.jpg";
 import wd3 from "./assets/wd3.jpg";
 import wd4 from "./assets/wd4.jpg";
+import qrcode from "./assets/qr-code-1.png"
 import "./Styles/Works.scss";
 // for contact
 import { ArrowBack } from "@material-ui/icons";
@@ -98,10 +99,8 @@ const Portfolio=()=>
                 </Link>
               </div>
               <div className="buttons">
-                
-                  <form method="get" action={pdf}>
-                    <button>download cv</button>
-                  </form>
+                 <p>Scan the Qr Code for See my Cv</p>
+                 <img src={qrcode} width="40%" height="auto"></img>
                
               </div>
             </div>
