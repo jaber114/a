@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "./Styles/Header.scss";
 import "./Styles/Main.scss";
 import man from "./assets/jaber.JPG";
-import pdf from "./assets/QA.pdf";
+import pdf from "./assets/jaber-cv-1.pdf";
 import "./Styles/Section.scss";
 import man2 from "./assets/jaj.jpg";
 // for work section
@@ -98,9 +98,11 @@ const Portfolio=()=>
                 </Link>
               </div>
               <div className="buttons">
-                <Link to={pdf} target="_blank" download>
-                  <button>DownLoad Cv</button>
-                </Link>
+                
+                  <form method="get" action={pdf}>
+                    <button>download cv</button>
+                  </form>
+               
               </div>
             </div>
           </div>
